@@ -29,11 +29,21 @@
 .food-img {
   width: 100%;
 }
-.search-container {
-  padding: 5px;
+.filter-container {
+  padding: 10px;
 }
 .res-card-container {
   display: flex;
   flex-wrap: wrap;
   padding-left: 25px;
+}
+.search-container {
+  padding: 10px;
+}
+.care-container {
+  display: flex;
+  justify-content: space-between;
+}
+.search-btn {
+  margin: 10px;
 }

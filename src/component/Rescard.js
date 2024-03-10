@@ -7,8 +7,8 @@ const Rescard = ({ resObject }) => {
       <img className="food-img" src={resImage} alt="food1"></img>
       <h4>{resName}</h4>
       <h5>{resCusine}</h5>
-      <h5>{resRating}</h5>
-      <h6>{resTime}</h6>
+      <h5>{resRating + ' stars'}</h5>
+      <h6>{resTime + ' mins'}</h6>
     </div>
   );
 };
