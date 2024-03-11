@@ -4,14 +4,10 @@ import ResData from '../utils/mockdata';
 
 const Body = () => {
   const [cardData, setCarddata] = useState(ResData);
-  const [inputText, setInputText] = useState('');
   const handleChange = (e) => {
-    // 👇 Store the input value to local state
-    console.log('hello');
+    const samp = e.target.value;
 
-    setInputText(e.target.value);
-    console.log(inputText);
-    setCarddata(cardData.filter((e) => e.resName == 'KFC'));
+    setCarddata(cardData.filter((e) => e.resName === samp));
   };
 
   return (
@@ -23,7 +19,6 @@ const Body = () => {
             placeholder="Search"
             name="search-bar"
             onChange={handleChange}
-            value={inputText}
           ></input>
         </div>
         <div className="filter-container">
